@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORICLOUD</title>
+<style>
+:root {
+    --bg: #050816;
+    --text: #ffffff;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --line: rgba(255,255,255,0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(circle at top, #0f172a 0%, #050816 60%);
+    color: var(--text);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.hero {
+    max-width: 900px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: clamp(56px, 10vw, 92px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 0.95;
+    margin-bottom: 28px;
+}
+
+.hero .subtitle {
+    font-size: clamp(22px, 3vw, 30px);
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 44px;
+}
+
+.tagline {
+    font-size: clamp(18px, 2.4vw, 22px);
+    line-height: 1.7;
+    color: #dbeafe;
+}
+
+.divider {
+    width: 140px;
+    height: 1px;
+    background: var(--line);
+    margin: 64px auto 44px;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        padding: 72px 20px 40px;
+    }
+
+    .logo {
+        top: 20px;
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+
+    .divider {
+        margin: 48px auto 32px;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">NORICLOUD</div>
+
+        <section class="hero">
+            <h1>NORICLOUD</h1>
+            <div class="subtitle">Personal AI Infrastructure</div>
+
+            <div class="tagline">
+                Own Your Memory.<br>
+                Own Your Knowledge.<br>
+                Own Your Future.
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="footer">
+                Currently under development.<br>
+                © NORICLOUD
+            </div>
+        </section>
+    </div>
+</body>
+</html>
