@@ -3,35 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="NORICLOUD — 城市發展、策略規劃與數位解決方案。">
-  <title>NORICLOUD | Urban Development · Strategy · Digital Solutions</title>
+  <meta name="description" content="NORICLOUD — 城市發展、策略與規劃、數位與 AI 解決方案。">
+  <title>NORICLOUD | Urban Development · Strategy &amp; Planning · Digital &amp; AI Solutions</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="site-shell header-inner">
       <a class="brand" href="#top" aria-label="NORICLOUD Home">NORICLOUD</a>
 
-      <nav class="desktop-nav" aria-label="Primary">
-        <a href="#top">Home</a>
-        <a href="#strategy-planning">Strategy &amp; Planning</a>
-        <a href="#digital-ai">Digital &amp; AI Solutions</a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a class="is-active" href="#top">Home</a>
+        <a href="strategy-planning.html">Strategy &amp; Planning</a>
+        <a href="digital-ai.html">Digital &amp; AI Solutions</a>
         <a href="about.html">About</a>
-        <span class="lang">EN&nbsp;&nbsp;|&nbsp;&nbsp;中文</span>
-        <a class="btn" href="client.html">Client Login</a>
-        <a class="btn btn-primary" href="mailto:hello@noricloud.net">Contact</a>
       </nav>
 
+      <div class="header-actions">
+        <span class="language-switch" aria-label="Language switch">EN&nbsp;&nbsp;|&nbsp;&nbsp;中文</span>
+        <span class="header-divider" aria-hidden="true"></span>
+        <a href="client.html">Client Login</a>
+        <a href="mailto:contact@noricloud.net">Contact</a>
+      </div>
+
       <details class="mobile-menu">
-        <summary>Menu</summary>
-        <nav class="mobile-panel" aria-label="Mobile">
+        <summary aria-label="Open navigation">Menu</summary>
+        <nav class="mobile-panel" aria-label="Mobile navigation">
           <a href="#top">Home</a>
-          <a href="#strategy-planning">Strategy &amp; Planning</a>
-          <a href="#digital-ai">Digital &amp; AI Solutions</a>
+          <a href="strategy-planning.html">Strategy &amp; Planning</a>
+          <a href="digital-ai.html">Digital &amp; AI Solutions</a>
           <a href="about.html">About</a>
           <a href="client.html">Client Login</a>
-          <a href="mailto:hello@noricloud.net">Contact</a>
-          <span class="lang">EN | 中文</span>
+          <a href="mailto:contact@noricloud.net">Contact</a>
+          <span class="language-switch">EN | 中文</span>
         </nav>
       </details>
     </div>
@@ -39,89 +43,94 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="site-shell hero-inner">
         <div class="hero-copy">
           <h1 id="hero-title">NORICLOUD</h1>
-          <p class="descriptor-zh">城市發展｜策略規劃｜數位解決方案</p>
-          <p class="descriptor-en">Urban Development · Strategy · Digital Solutions</p>
+          <p class="descriptor-zh">城市發展｜策略與規劃｜數位與 AI 解決方案</p>
+          <p class="descriptor-en">Urban Development · Strategy &amp; Planning · Digital &amp; AI Solutions</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#strategy-planning">探索策略與規劃 →</a>
-            <a class="btn" href="#digital-ai">探索數位與 AI 解決方案 →</a>
+            <a class="hero-link" href="#strategy-planning">探索策略與規劃 <span aria-hidden="true">→</span></a>
+            <a class="hero-link" href="#digital-ai">探索數位與 AI 解決方案 <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="lanes" aria-label="NORICLOUD service lanes">
+    <section class="two-lanes" aria-label="NORICLOUD primary capability paths">
       <article class="lane lane-strategy" id="strategy-planning">
-        <h2>策略與規劃</h2>
-        <p class="en">Strategy &amp; Planning</p>
-        <p>協助客戶掌握城市、目的地、土地、投資與基礎建設的發展機會，形成可執行的策略與發展方向。</p>
-        <p class="keywords">Cities · Destinations · Land · Investment · Infrastructure</p>
-        <a class="more" href="strategy-planning.html">了解策略與規劃 →</a>
+        <div class="lane-copy">
+          <p class="lane-kicker">STRATEGY &amp; PLANNING</p>
+          <h2>以專業洞察，<br>規劃更好的城市與區域</h2>
+          <p class="lane-summary">從城市、區域與土地發展，到交通、基礎建設與投資議題，以整合的空間與發展視角，支持更清晰的判斷與決策。</p>
+          <p class="lane-scope">Cities · Destinations · Land · Investment · Infrastructure</p>
+          <a class="lane-link" href="strategy-planning.html">探索策略與規劃 <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="lane-visual strategy-visual" role="img" aria-label="Strategy and planning visual placeholder showing spatial planning and infrastructure relationships"></div>
       </article>
 
       <article class="lane lane-digital" id="digital-ai">
-        <h2>數位與 AI 解決方案</h2>
-        <p class="en">Digital &amp; AI Solutions</p>
-        <p>將專業知識、工作流程與決策需求，轉化為實際可用的數位工具、自動化流程與 AI 系統。</p>
-        <p class="keywords">Knowledge · Workflow · Automation · Decisions · Products</p>
-        <div class="digital-visual" aria-hidden="true">
-          <span class="digital-node"></span><span class="digital-node"></span><span class="digital-node"></span><span class="digital-node"></span><span class="digital-node"></span>
+        <div class="lane-copy">
+          <p class="lane-kicker">DIGITAL &amp; AI SOLUTIONS</p>
+          <h2>以數位與 AI，<br>放大專業影響力</h2>
+          <p class="lane-summary">將專業知識、研究資料與工作流程轉化為可持續運作的數位系統，協助團隊提升分析、協作、決策與執行效率。</p>
+          <p class="lane-scope">Knowledge · Workflow · Automation · Decisions · Products</p>
+          <a class="lane-link" href="digital-ai.html">探索數位與 AI 解決方案 <span aria-hidden="true">→</span></a>
         </div>
-        <a class="more" href="digital-ai.html">了解數位與 AI 解決方案 →</a>
+        <div class="lane-visual digital-visual" role="img" aria-label="Digital and AI visual placeholder showing professional knowledge becoming structured workflows and decision support"></div>
       </article>
     </section>
 
     <section class="experience" aria-labelledby="experience-title">
-      <div class="container experience-grid">
-        <div>
-          <div class="section-kicker">Experience</div>
-          <h2 class="section-title" id="experience-title">經驗與足跡<br><span style="font-weight:500;font-size:.55em">Experience Across Asia</span></h2>
-          <div class="metrics">
-            <div class="metric">
+      <div class="site-shell experience-layout">
+        <div class="experience-copy">
+          <p class="experience-kicker">EXPERIENCE</p>
+          <h2 id="experience-title">經驗與足跡</h2>
+          <p class="experience-en">Experience Across Asia</p>
+
+          <div class="experience-metrics">
+            <div class="experience-metric">
               <strong>60+</strong>
-              <span>Projects</span>
-              <span class="cn">專案經驗</span>
+              <p>累積參與大型與超大型城市規劃及相關策略工作</p>
             </div>
-            <div class="metric">
+            <div class="experience-metric">
               <strong>40+</strong>
-              <span>Cities</span>
-              <span class="cn">城市經驗</span>
-            </div>
-            <div class="metric">
-              <strong>Across Asia</strong>
-              <span>Regional Experience</span>
-              <span class="cn">亞洲區域經驗</span>
+              <p>累積專業經驗涵蓋城市</p>
             </div>
           </div>
+
+          <p class="experience-footprint">
+            <span>跨城市 · 跨市場 · 遍及亞洲</span>
+            <span>Cross-city · Cross-market experience across Asia</span>
+          </p>
         </div>
-        <div class="asia-map" aria-label="Neutral Asia outline without project markers">
-          <img src="assets/asia-outline.svg" alt="Simplified Asia outline without project or city markers">
+
+        <div class="experience-map" aria-label="Asia geographic context without project markers">
+          <img src="assets/asia-outline.svg" alt="Simplified Asia geographic context without project or city markers">
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-main">
-        <div>
-          <div class="footer-brand">NORICLOUD</div>
-          <div class="footer-sub">Urban Development · Strategy · Digital Solutions</div>
-        </div>
-        <nav class="footer-links" aria-label="Footer">
+    <div class="site-shell">
+      <div class="footer-top">
+        <a class="footer-brand" href="#top">NORICLOUD</a>
+        <nav class="footer-links" aria-label="Footer navigation">
           <a href="#top">Home</a>
           <a href="strategy-planning.html">Strategy &amp; Planning</a>
           <a href="digital-ai.html">Digital &amp; AI Solutions</a>
           <a href="about.html">About</a>
           <a href="client.html">Client Login</a>
-          <a href="mailto:hello@noricloud.net">Contact</a>
+          <a href="mailto:contact@noricloud.net">Contact</a>
         </nav>
+        <span class="footer-language">EN&nbsp;&nbsp;|&nbsp;&nbsp;中文</span>
       </div>
+
       <div class="footer-bottom">
-        <span>© 2026 NORICLOUD. Rights wording pending final verification.</span>
-        <span>Privacy · Terms · Web v0.1.0</span>
+        <span>© 2026 NORICLOUD. All rights reserved.</span>
+        <span class="footer-legal"><a href="privacy.html">Privacy</a><span aria-hidden="true">|</span><a href="terms.html">Terms</a></span>
       </div>
     </div>
   </footer>
