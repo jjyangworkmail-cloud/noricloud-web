@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "product_id": "PR-001",
+  "product": "NORICLOUD Public Web",
+  "version": "v0.1.0",
+  "release_channel": "production",
+  "status": "DEPLOYED_PENDING_LIVE_ACCEPTANCE",
+  "date": "2026-09-28",
+  "default_language": "zh-TW",
+  "english_locale": "HIDDEN_DEFERRED",
+  "next_focus": "Client Portal",
+  "public_release": false,
+  "authority": "05_Products/PR-001_NORICLOUD_Public_Web/00_PR-001_NORICLOUD_Public_Web_Product_Map_START_HERE.md",
+  "source_repository": "jjyangworkmail-cloud/noricloud-system",
+  "source_branch": "product/pr-001-public-web-authority",
+  "source_commit": "c53d132eddee0d3fcec27712aa556d20c600d29a",
+  "promoted_from": "v0.1.0-preview.3",
+  "production_repository": "jjyangworkmail-cloud/noricloud-web",
+  "production_branch": "main",
+  "production_url": "https://www.noricloud.net",
+  "preview_url": "https://preview.noricloud.net",
+  "release_rule": "Preview changes never update production automatically; every production promotion requires JJ explicit approval."
+}
