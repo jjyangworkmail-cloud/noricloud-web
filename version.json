@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "product_id": "PR-001",
   "product": "NORICLOUD Public Web",
-  "version": "v0.1.1",
+  "version": "v0.2.0",
   "release_channel": "production",
   "status": "DEPLOYED",
   "date": "2026-09-29",
@@ -13,17 +13,18 @@
   "authority": "05_Products/PR-001_NORICLOUD_Public_Web/00_PR-001_NORICLOUD_Public_Web_Product_Map_START_HERE.md",
   "source_repository": "jjyangworkmail-cloud/noricloud-system",
   "source_branch": "product/pr-001-public-web-authority",
-  "source_commit": "a02ff72b20a988694388b77daa81bdc81a5fd969",
-  "promoted_from": "v0.1.0",
+  "source_commit": "05ba71efe034533c86233227990861571acab6d6",
+  "promoted_from": "v0.1.1",
   "production_repository": "jjyangworkmail-cloud/noricloud-web",
   "production_branch": "main",
   "production_url": "https://www.noricloud.net",
   "preview_url": "https://preview.noricloud.net",
   "release_rule": "Every user-visible production change must close with a registered production release. Preview remains independent and production promotion requires JJ explicit approval.",
   "notes": [
-    "Patch release after production S&P desktop header alignment.",
-    "Release identity reconciled after a production-visible change had landed while version.json remained v0.1.0.",
-    "Footer version labels read /version.json; static v0.1.0 text remains fallback only.",
-    "Future user-visible production changes must not close without version, release log, authority and rollback-state reconciliation."
+    "Client Login is now an active public capability and routes directly to https://client.noricloud.net.",
+    "Public Web owns only the Client Portal entry link; Cloudflare Access owns authentication and Client Portal owns authorization.",
+    "No intermediate NORICLOUD login page or duplicate authentication layer was added.",
+    "Existing Client Login anchors on Home, About, Contact, Privacy and Terms were activated; S&P and D&A currently contain no client-login anchor and were not structurally changed.",
+    "Production footer version is projected from /version.json."
   ]
 }
