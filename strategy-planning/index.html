@@ -496,6 +496,61 @@
   .site-header .header-inner{width:min(calc(100% - 28px),1580px)}
 }
 .site-footer .footer-bottom span{font:400 .68rem "Segoe UI","Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;color:rgba(238,243,242,.74)}
+
+
+/* 2026-09-29 PR-001 desktop header exact alignment with Home */
+.site-header{
+  background:rgba(250,249,246,.97);
+  border-bottom:1px solid rgba(11,34,49,.08);
+  backdrop-filter:blur(14px);
+}
+.site-header .desktop-nav{
+  justify-self:center;
+  display:flex;
+  gap:33px;
+  font:400 .81rem "Segoe UI","Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;
+}
+.site-header .desktop-nav a{
+  height:76px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  padding:0;
+  white-space:nowrap;
+  color:#0b2231;
+  font:inherit;
+  letter-spacing:normal;
+}
+.site-header .desktop-nav a.active:after{
+  left:0;
+  right:0;
+  bottom:16px;
+  height:1px;
+  background:#0b2231;
+}
+.site-header .header-actions{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font:400 .78rem "Segoe UI","Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;
+  white-space:nowrap;
+}
+.site-header .header-actions a{
+  color:#0b2231;
+  font:inherit;
+  letter-spacing:normal;
+}
+.site-header .contact-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:39px;
+  padding:0 18px;
+  border:1px solid rgba(11,34,49,.72);
+}
+@media (min-width:1101px){
+  .hero{padding-top:76px}
+}
 </style>
 </head>
 <body>
